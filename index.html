@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Personal Portfolio Website - Danyal Nemati</title>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="images/logo.png" class="logo">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="header-text">
+          <p>Web Developer</p>
+          <h1>Hi, I'm <span>Danyal</span> <br> From Socal</h1>
+        </div>
+      </div>
+
+    </div>
+<div id="about">
+  <div class="container">
+    <div class="row">
+      <div class="about-col-1">
+        <img src="images/user.jpg" >
+      </div>
+      <div class="about-col-2">
+        <h1 class="sub-title">About Me</h1>
+        <p>Hello, I'm Danyal, a senior studying Computer Science at CSUF.
+           I'm passionate about software engineering and web development, 
+           specializing in languages like Python, JavaScript, and Java, 
+           along with frameworks like React and Django. With hands-on experience
+           in frontend and backend development, I enjoy finding elegant solutions
+           to complex technical challenges. I'm excited to contribute my skills 
+           and knowledge to impactful software solutions.</p>
+           <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+              <p class="tab-links" onclick="opentab('experience')">Experience</p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+           </div>
+           <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>Front-End</span><br>Designing HTML, CSS/ JavaScript, TypeScript/ React, Next Js</li>
+                <li><span>Back-End</span><br>Firebase/Pocketbase</li>
+                <li><span>Other</span><br>DataStructures/Algorithms/OS/Databases</li>
+              </ul>
+           </div>
+           <div class="tab-contents" id="experience">
+            <ul>
+              <li><span>2022</span><br>Data Science Research Intern at ASSURE-US</li>
+              <li><span>2019-2021</span><br>LifeGuard at Woodbrdige Village Association </li>
+              <li><span>2016-2020</span><br>Toxicologist Assistant at Equaltox</li>
+            </ul>
+         </div>
+         <div class="tab-contents" id="education">
+          <ul>
+            <li><span>2020-Current</span><br>Bachelor's in Computer Science/California State University Fullerton</li>
+            <li><span>2023-Current</span><br>Back-End and Front-End Meta Certifcation </li>
+            <li><span>2016-2020</span><br>Woodbrdige High School</li>
+          </ul>
+       </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  var tablinks = document.getElementsByClassName('tab-links');
+  var tabcontents = document.getElementsByClassName('tab-contents');
+
+  function opentab(tabname){
+    for(tablink of tablinks){
+      tablink.classList.remove("active-link");
+    }
+    for(tabcontent of tabcontents){
+      tabcontent.classList.remove("active-tab");
+    }
+  }
+</script>
+  </body>
+</html>
