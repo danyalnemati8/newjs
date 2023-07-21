@@ -315,6 +315,15 @@ form .btn2{
 nav .fas{
     display: none;
 }
+.github-contrib {
+
+    padding: 20px;
+  }
+  
+  .github-contrib img {
+    max-width: 100%;
+  }
+  
 
 @media only screen and (max-width:600px){
     #header {
